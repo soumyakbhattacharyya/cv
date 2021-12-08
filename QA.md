@@ -1,4 +1,15 @@
-1. Docker Swarm
+1. Docker Compose
+   1. what is predecessor of docker compose (fig)
+   2. what is the format of dc file (version, services, networks, volumes)
+   3. what is the default networking for dc (bridge)
+   4. what does build attribute of service signifies (the Dockerfile to build from)
+   5. what does command attribute of service signifies (how to run)
+   6. what does ports attribute signifies (the port to expose to the bridge)
+   7. what does networks attribute signifies (the network to run the service against)
+   8. what does the volume attribute signifies (the volume shared across multiple containers)
+   9. does the volume created by dc gets automatically deleted (no)
+   10. what is the command to see all running containers by dc (docker service ls)
+2. Docker Swarm
    1. what are 2 modes of swarm (cluster and orchestration)
    2. what is swarm node (any machine with docker)
    3. what are node types (manager and worker)
@@ -29,4 +40,8 @@
    24. how to remove a service (docker service rm <SERVICE_NAME>)
    25. how to perform rolling update (docker service update --image <NEW_IMAGE> --update-parallelism 2 --update-delay 20s <SERVICE_NAME>)
    26. how to tail docker service log (docker service logs <SERVICE_NAME)
-   27. 
+   27. what is the default log driver for docker swarm (json-file)
+   28. what are few of the supported log drivers (splunk, syslog)
+   29. what is the premises of log driver (assuming the container to be running as PID1 the STDERR and STDOUT are routed to respective log location, as defined by the driver)
+   30. which directory needs to be backed up for docker swarm (/var/lib/docker/swarm)
+   31. what is the flag that needs to be passed to restore the docker swarm (--force-new-cluster)
