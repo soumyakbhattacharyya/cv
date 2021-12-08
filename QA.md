@@ -1,4 +1,41 @@
-1. Docker Compose
+1. Docker Basic
+   1. What is a Container? (containers are abstraction at app layer combining code and dependency)
+   2. What is a Docker Image? (multi layered self contained file that act as template of container)
+   3. What is a Docker Registry? (repository to store and distribute images)
+   4. Docker Architecture Overview (docker demon or dockerd, docker client, REST API)
+   5. Docker Manipulation Basic
+      1. how to run container (docker run <IMAGE_NAME>)
+      2. what are 4 docker objects that can be manipulated (image, container, network, volume)
+      3. how to publish a port (--publish flag)
+      4. how to run container in detached mode (--detach)
+      5. how to list containers (docker container ls)
+      6. how to name a container (--name)
+      7. how to kill a container (docker container stop)
+      8. how to restart (docker container restart)
+      9. how to remove container (docker rm)
+      10. how to see stopped container (docker ls --all)
+      11. how to run container in interactive mode (docker -it)
+   6. Docker Image Manipulation
+      1. what are 4 basic components of Dockerfile (FROM, EXPOSE, RUN and CMD)
+      2. what does RUN signifies (command that executes on the container on booting up)
+      3. what does CMD signifies (command that start used as default command to start the container)
+      4. how to create tags (--tags <REPOSITORY>:<TAG>)
+      5. how to see various layers of docker images (docker image history)
+      6. how to copy file from local machine to the docker image (COPY)
+      7. what is the difference between COPY and ADD (COPY does not support tar and remote url)
+      8. how to declare constants in a Dockerfile (ARG)
+      9. what is the linux distribution that we should use in order to attain a small image size (alpine-linux)
+      10. which command is used to login to DockerHub (docker login)
+   7. Docker Network Manipulation
+      1. how many networking drivers does docker have (5)
+      2. what is bridge network type (default mode; multiple containers communicate with each other)
+      3. what is host network (the containers shares host network; no network isolation)
+      4. what is none network (no network for the containers)
+      5. what is overlay network (network to connect multiple docker daemon)
+      6. what is macvlan (containers get mac address)
+      7. what is user defined bridge network (custom network, provides isolation)
+      8. how to connect to a user defined bridge network (docker network connect <NETWORK> <CONTAINER>)
+2. Docker Compose
    1. what is predecessor of docker compose (fig)
    2. what is the format of dc file (version, services, networks, volumes)
    3. what is the default networking for dc (bridge)
@@ -9,7 +46,7 @@
    8. what does the volume attribute signifies (the volume shared across multiple containers)
    9. does the volume created by dc gets automatically deleted (no)
    10. what is the command to see all running containers by dc (docker service ls)
-2. Docker Swarm
+3. Docker Swarm
    1. what are 2 modes of swarm (cluster and orchestration)
    2. what is swarm node (any machine with docker)
    3. what are node types (manager and worker)
