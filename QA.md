@@ -1,4 +1,17 @@
-1. **Docker Basic**
+1. **Data Warehousing**
+   1. Basic
+      1. what is data warehouse (warehouse filled with data; not a database)
+      2. what is the difference between database and data warehouse (database is platform and data warehouse is an application)
+      3. is data copied or moved to data warehouse (copied)
+      4. what are the rules of data warehouse (integrated, subject oriented, contains historical data, non - volatility)
+      5. why do we build data warehouse (support data driven decision making & one stop shop for data)
+      6. what is difference between data warehouse and data lake (data warehouse are built on RDBMS and data lakes are built on Big Data environment; typically data lakes cater to humongous volume, variety and velocity)
+      7. what is the difference between data warehouse and data virtualization (data virtualization is a technique to create read - only view of data to build analytics capability on top of it; unlike data warehouse this does not copy data from it's original place to a new place)
+      8. what is data mart (smaller subset of a large data warehouse)
+      9. what is ETL (the process of extraction, transformation and loading of data from source to data warehouse)
+   2. Architecture
+      1. 
+2. **Docker Basic**
    1. What is a Container? (containers are abstraction at app layer combining code and dependency)
    2. What is a Docker Image? (multi layered self contained file that act as template of container)
    3. What is a Docker Registry? (repository to store and distribute images)
@@ -35,7 +48,7 @@
       6. what is macvlan (containers get mac address)
       7. what is user defined bridge network (custom network, provides isolation)
       8. how to connect to a user defined bridge network (docker network connect <NETWORK> <CONTAINER>)
-2. **Docker Compose**
+3. **Docker Compose**
    1. what is predecessor of docker compose (fig)
    2. what is the format of dc file (version, services, networks, volumes)
    3. what is the default networking for dc (bridge)
@@ -46,7 +59,7 @@
    8. what does the volume attribute signifies (the volume shared across multiple containers)
    9. does the volume created by dc gets automatically deleted (no)
    10. what is the command to see all running containers by dc (docker service ls)
-3. **Docker Swarm**
+4. **Docker Swarm**
    1. what are 2 modes of swarm (cluster and orchestration)
    2. what is swarm node (any machine with docker)
    3. what are node types (manager and worker)
