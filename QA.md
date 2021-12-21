@@ -10,7 +10,22 @@
       8. what is data mart (smaller subset of a large data warehouse)
       9. what is ETL (the process of extraction, transformation and loading of data from source to data warehouse)
    2. Architecture
-      1. 
+      1. what is centralized data warehouse (single database serving as data warehouse)
+      2. what are the problems with centralized data warehouse (technology, lack of knowledge, organizational coordination)
+      3. what is dependent data mart (data mart that is being fed from data warehouse)
+      4. what is independent data mart (data mart that sources data from systems directly)
+      5. what are the differences between dependent & independent data marts (source from warehouse; data is consistent; architecturally straightforward)
+      6. what is the difference between data warehouse and independent data mart (in the number of input sources, data warehouse has more)
+      7. what is a cube (dimensionally aware database)
+      8. what is benefit of cube (performance)
+      9. what is the problem of cube (rigid structure)
+      10. what is an operational data store (unlike DW ODS focuses on current operational data; not popular these days)
+      11. what are two parts of dw (staging layer and user access layer)
+      12. what is staging layer ("landing zone", E of ETL)
+      13. what is user access layer (dimensional data, user access restricted)
+      14. how does the staging layers being designed (they mimic the source, to support rapid data ingestion)
+      15. what are the variations of staging layer (persistent and non - persistent)
+      16.  
 2. **Docker Basic**
    1. What is a Container? (containers are abstraction at app layer combining code and dependency)
    2. What is a Docker Image? (multi layered self contained file that act as template of container)
