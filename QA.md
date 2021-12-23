@@ -25,7 +25,9 @@
       13. what is user access layer (dimensional data, user access restricted)
       14. how does the staging layers being designed (they mimic the source, to support rapid data ingestion)
       15. what are the variations of staging layer (persistent and non - persistent)
-      16.  
+   3. ETL
+      1. what is ETL (loading the data in batches into the staging layer of a dw; transform quickly to attain uniform view for user layer)
+      2. 
 2. **Docker Basic**
    1. What is a Container? (containers are abstraction at app layer combining code and dependency)
    2. What is a Docker Image? (multi layered self contained file that act as template of container)
